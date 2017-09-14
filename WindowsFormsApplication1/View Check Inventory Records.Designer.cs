@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View_Check_Inventory_Records));
             this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.button7 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,7 +62,8 @@
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ShelfQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,15 +81,6 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Inform Branch Manager on Discrepancy";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(21, 191);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(131, 34);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Return Stocks";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -124,7 +115,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(21, 242);
+            this.button6.Location = new System.Drawing.Point(21, 190);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(131, 34);
             this.button6.TabIndex = 7;
@@ -170,9 +161,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(918, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 16);
+            this.label3.Size = new System.Drawing.Size(39, 16);
             this.label3.TabIndex = 29;
-            this.label3.Text = "[STAFF NAME]";
+            this.label3.Text = "Tom";
             // 
             // label2
             // 
@@ -196,7 +187,6 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(28, 99);
             this.groupBox1.Name = "groupBox1";
@@ -206,7 +196,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(21, 296);
+            this.button4.Location = new System.Drawing.Point(21, 245);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(131, 34);
             this.button4.TabIndex = 5;
@@ -257,9 +247,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(410, 25);
+            this.label4.Size = new System.Drawing.Size(333, 25);
             this.label4.TabIndex = 14;
-            this.label4.Text = "VIEW/CHECK INVENTORY RECORDS";
+            this.label4.Text = "View/Check Inventory Records";
             // 
             // groupBox2
             // 
@@ -334,6 +324,11 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Fruits",
+            "Beverages",
+            "Meat",
+            "Vegetables"});
             this.comboBox1.Location = new System.Drawing.Point(20, 90);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(134, 21);
@@ -346,7 +341,8 @@
             this.Category,
             this.Productname,
             this.ProductID,
-            this.Quantity,
+            this.StockQuantity,
+            this.ShelfQuantity,
             this.UnitCost,
             this.UnitPrice});
             this.dataGridView1.Location = new System.Drawing.Point(20, 135);
@@ -371,10 +367,15 @@
             this.ProductID.HeaderText = "ProductID";
             this.ProductID.Name = "ProductID";
             // 
-            // Quantity
+            // StockQuantity
             // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
+            this.StockQuantity.HeaderText = "Stock Quantity";
+            this.StockQuantity.Name = "StockQuantity";
+            // 
+            // ShelfQuantity
+            // 
+            this.ShelfQuantity.HeaderText = "Shelf Quantity";
+            this.ShelfQuantity.Name = "ShelfQuantity";
             // 
             // UnitCost
             // 
@@ -417,7 +418,6 @@
         #endregion
 
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label1;
@@ -450,7 +450,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Productname;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StockQuantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ShelfQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn UnitCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
     }

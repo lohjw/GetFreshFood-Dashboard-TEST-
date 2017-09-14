@@ -76,6 +76,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox4.Location = new System.Drawing.Point(245, 171);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(131, 20);
@@ -119,6 +120,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox3.Location = new System.Drawing.Point(309, 110);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(67, 20);
@@ -135,6 +137,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox2.Location = new System.Drawing.Point(12, 171);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(131, 20);
@@ -151,6 +154,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox1.Location = new System.Drawing.Point(12, 110);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 20);
@@ -162,9 +166,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(359, 25);
+            this.label4.Size = new System.Drawing.Size(285, 25);
             this.label4.TabIndex = 14;
-            this.label4.Text = "UPDATE INVENTORY RECORDS";
+            this.label4.Text = "Update Inventory Records";
             // 
             // Update_Inventory_Records_2
             // 
