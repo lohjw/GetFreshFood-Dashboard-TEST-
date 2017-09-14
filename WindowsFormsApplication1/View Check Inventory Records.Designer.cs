@@ -401,7 +401,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "View_Check_Inventory_Records";
-            this.Text = "View_Check_Inventory_Records";
+            this.Text = "View/Check Inventory Records";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);

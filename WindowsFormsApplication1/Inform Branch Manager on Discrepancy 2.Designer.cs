@@ -132,7 +132,7 @@
             this.ClientSize = new System.Drawing.Size(901, 508);
             this.Controls.Add(this.groupBox2);
             this.Name = "Inform_Branch_Manager_on_Discrepancy_2";
-            this.Text = "Inform_Branch_Manager_on_Discrepancy_2";
+            this.Text = "Inform Branch Manager on Discrepancy";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

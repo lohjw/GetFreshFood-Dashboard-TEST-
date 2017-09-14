@@ -30,10 +30,6 @@
         {
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +37,10 @@
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -57,43 +57,6 @@
             this.groupBox2.Size = new System.Drawing.Size(922, 368);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 13);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Please prepare new digital price display for synchronisation";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 13);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "New Product ID detected";
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(391, 179);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(131, 34);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Sync";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(359, 25);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "UPDATE INVENTORY RECORDS";
             // 
             // dataGridView1
             // 
@@ -142,6 +105,43 @@
             this.UnitPrice.HeaderText = "Unit Price";
             this.UnitPrice.Name = "UnitPrice";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(283, 13);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Please prepare new digital price display for synchronisation";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 13);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "New Product ID detected";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(391, 179);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(131, 34);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "Sync";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(359, 25);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "UPDATE INVENTORY RECORDS";
+            // 
             // Update_Inventory_Records_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,7 +149,7 @@
             this.ClientSize = new System.Drawing.Size(964, 415);
             this.Controls.Add(this.groupBox2);
             this.Name = "Update_Inventory_Records_3";
-            this.Text = "Update_Inventory_Records_3";
+            this.Text = "Update Inventory Records";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

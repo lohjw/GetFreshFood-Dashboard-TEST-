@@ -31,6 +31,8 @@
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -41,8 +43,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,22 @@
             this.groupBox2.Size = new System.Drawing.Size(398, 371);
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(234, 171);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(131, 20);
+            this.textBox4.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(231, 146);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 13);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Purchase Order No.";
             // 
             // label1
             // 
@@ -161,22 +177,6 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "UPDATE INVENTORY RECORDS";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(234, 171);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(131, 20);
-            this.textBox4.TabIndex = 25;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(231, 146);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 13);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Purchase Order No.";
-            // 
             // Update_Inventory_Records_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,7 +184,7 @@
             this.ClientSize = new System.Drawing.Size(460, 428);
             this.Controls.Add(this.groupBox2);
             this.Name = "Update_Inventory_Records_2";
-            this.Text = "Update_Inventory_Records_2";
+            this.Text = "Update Inventory Records";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
