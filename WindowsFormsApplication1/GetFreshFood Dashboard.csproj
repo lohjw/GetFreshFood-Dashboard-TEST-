@@ -52,10 +52,52 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inform Branch Manager on Discrepancy 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inform Branch Manager on Discrepancy 2.Designer.cs">
+      <DependentUpon>Inform Branch Manager on Discrepancy 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inform Branch Manager on Discrepancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inform Branch Manager on Discrepancy.Designer.cs">
+      <DependentUpon>Inform Branch Manager on Discrepancy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Update Inventory Records 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Inventory Records 2.Designer.cs">
+      <DependentUpon>Update Inventory Records 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Inventory Records 3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Inventory Records 3.Designer.cs">
+      <DependentUpon>Update Inventory Records 3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Inventory Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Inventory Records.Designer.cs">
+      <DependentUpon>Update Inventory Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Check Inventory Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Check Inventory Records.Designer.cs">
+      <DependentUpon>View Check Inventory Records.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inform Branch Manager on Discrepancy 2.resx">
+      <DependentUpon>Inform Branch Manager on Discrepancy 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inform Branch Manager on Discrepancy.resx">
+      <DependentUpon>Inform Branch Manager on Discrepancy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +108,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Update Inventory Records 2.resx">
+      <DependentUpon>Update Inventory Records 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Inventory Records 3.resx">
+      <DependentUpon>Update Inventory Records 3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Inventory Records.resx">
+      <DependentUpon>Update Inventory Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Check Inventory Records.resx">
+      <DependentUpon>View Check Inventory Records.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
